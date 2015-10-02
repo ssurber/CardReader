@@ -39,6 +39,10 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
     }
     
+    @IBAction func openMap() {
+
+    }
+    
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         let temp : UIImage = info[UIImagePickerControllerOriginalImage] as! UIImage
         imageView.image = temp
