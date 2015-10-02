@@ -24,7 +24,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     @IBAction func getImage() {
         
-        var imageFromSource = UIImagePickerController()
+        let imageFromSource = UIImagePickerController()
         imageFromSource.delegate = self
         imageFromSource.allowsEditing = false
         
@@ -39,8 +39,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
     }
     
-    func imagePickerController(picker: UIImagePickerController!, didFinishPickingMediaWithInfo info: NSDictionary!) {
-        var temp : UIImage = info[UIImagePickerControllerOriginalImage] as UIImage
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
+        let temp : UIImage = info[UIImagePickerControllerOriginalImage] as! UIImage
         imageView.image = temp
         self.dismissViewControllerAnimated(true, completion:{})
     }
