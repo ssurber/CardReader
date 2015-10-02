@@ -8,7 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    @IBOutlet var imageView : UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +21,29 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func getImage() {
+        
+        var imageFromSource = UIImagePickerController()
+        imageFromSource.delegate = self
+        imageFromSource.allowsEditing = false
+        
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera) {
+            imageFromSource.sourceType = UIImagePickerControllerSourceType.Camera
+        } else {
+            imageFromSource.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
 
+        }
+        
+        self.presentViewController(imageFromSource, animated: true, completion:nil)
+        
+    }
+    
+    func imagePickerController(picker: UIImagePickerController!, didFinishPickingMediaWithInfo info: NSDictionary!) {
+        var temp : UIImage = info[UIImagePickerControllerOriginalImage] as UIImage
+        imageView.image = temp
+        self.dismissViewControllerAnimated(true, completion:{})
+    }
 
 }
 
