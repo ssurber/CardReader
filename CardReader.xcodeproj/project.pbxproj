@@ -14,6 +14,11 @@
 		BBCBBD5E1BBDA6D8009A7E0E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBCBBD5D1BBDA6D8009A7E0E /* Images.xcassets */; };
 		BBCBBD611BBDA6D8009A7E0E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBCBBD5F1BBDA6D8009A7E0E /* LaunchScreen.xib */; };
 		BBCBBD6D1BBDA6D8009A7E0E /* CardReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCBBD6C1BBDA6D8009A7E0E /* CardReaderTests.swift */; };
+		C6AC659A1BBEF91500A18C7A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6AC65991BBEF91500A18C7A /* CoreLocation.framework */; };
+		C6AC659E1BBEF9C200A18C7A /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = C6AC659D1BBEF9C200A18C7A /* tessdata */; settings = {ASSET_TAGS = (); }; };
+		C6AC65A21BBEFC7F00A18C7A /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6AC65A11BBEFC7F00A18C7A /* TesseractOCR.framework */; };
+		C6AC65A41BBEFCBE00A18C7A /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6AC65A31BBEFCBE00A18C7A /* CoreImage.framework */; };
+		C6AC65A61BBEFDC300A18C7A /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C6AC65A51BBEFDC300A18C7A /* libstdc++.6.0.9.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,13 @@
 		BBCBBD661BBDA6D8009A7E0E /* CardReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBCBBD6B1BBDA6D8009A7E0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBCBBD6C1BBDA6D8009A7E0E /* CardReaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardReaderTests.swift; sourceTree = "<group>"; };
+		C6AC65991BBEF91500A18C7A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C6AC659D1BBEF9C200A18C7A /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		C6AC659F1BBEFC5100A18C7A /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		C6AC65A11BBEFC7F00A18C7A /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TesseractOCR.framework; path = CardReader/TesseractOCR.framework; sourceTree = "<group>"; };
+		C6AC65A31BBEFCBE00A18C7A /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		C6AC65A51BBEFDC300A18C7A /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		C6AC65A71BBEFF8F00A18C7A /* CardReader-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CardReader-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +57,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6AC65A61BBEFDC300A18C7A /* libstdc++.6.0.9.tbd in Frameworks */,
+				C6AC65A41BBEFCBE00A18C7A /* CoreImage.framework in Frameworks */,
+				C6AC65A21BBEFC7F00A18C7A /* TesseractOCR.framework in Frameworks */,
+				C6AC659A1BBEF91500A18C7A /* CoreLocation.framework in Frameworks */,
 				BB6A582A1BBDB33900423395 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +78,11 @@
 		BBCBBD481BBDA6D8009A7E0E = {
 			isa = PBXGroup;
 			children = (
+				C6AC65A51BBEFDC300A18C7A /* libstdc++.6.0.9.tbd */,
+				C6AC65A31BBEFCBE00A18C7A /* CoreImage.framework */,
+				C6AC65A11BBEFC7F00A18C7A /* TesseractOCR.framework */,
+				C6AC659F1BBEFC5100A18C7A /* GLKit.framework */,
+				C6AC65991BBEF91500A18C7A /* CoreLocation.framework */,
 				BB6A58291BBDB33900423395 /* MapKit.framework */,
 				BBCBBD531BBDA6D8009A7E0E /* CardReader */,
 				BBCBBD691BBDA6D8009A7E0E /* CardReaderTests */,
@@ -87,6 +108,7 @@
 				BBCBBD5D1BBDA6D8009A7E0E /* Images.xcassets */,
 				BBCBBD5F1BBDA6D8009A7E0E /* LaunchScreen.xib */,
 				BBCBBD541BBDA6D8009A7E0E /* Supporting Files */,
+				C6AC65A71BBEFF8F00A18C7A /* CardReader-Bridging-Header.h */,
 			);
 			path = CardReader;
 			sourceTree = "<group>";
@@ -94,6 +116,7 @@
 		BBCBBD541BBDA6D8009A7E0E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C6AC659D1BBEF9C200A18C7A /* tessdata */,
 				BBCBBD551BBDA6D8009A7E0E /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -205,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBCBBD5C1BBDA6D8009A7E0E /* Main.storyboard in Resources */,
+				C6AC659E1BBEF9C200A18C7A /* tessdata in Resources */,
 				BBCBBD611BBDA6D8009A7E0E /* LaunchScreen.xib in Resources */,
 				BBCBBD5E1BBDA6D8009A7E0E /* Images.xcassets in Resources */,
 			);
@@ -272,7 +296,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -316,7 +340,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LIBRARY = "compiler-default";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -351,13 +375,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CardReader",
+				);
 				INFOPLIST_FILE = CardReader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = " -lstdc++";
 				PRODUCT_BUNDLE_IDENTIFIER = "Wizard-Inc..$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "CardReader/CardReader-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -365,13 +397,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CardReader",
+				);
 				INFOPLIST_FILE = CardReader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = " -lstdc++";
 				PRODUCT_BUNDLE_IDENTIFIER = "Wizard-Inc..$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "CardReader/CardReader-Bridging-Header.h";
 			};
 			name = Release;
 		};

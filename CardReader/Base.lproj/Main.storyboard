@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ii5-yc-1QF">
-                                <rect key="frame" x="168" y="558" width="72" height="30"/>
+                                <rect key="frame" x="171" y="551" width="72" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Get Image">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -31,8 +31,14 @@
                                 <rect key="frame" x="16" y="68" width="382" height="475"/>
                                 <animations/>
                             </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="B8c-VB-bxV">
+                                <rect key="frame" x="87" y="596" width="240" height="86"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iP3-bb-0hB">
-                                <rect key="frame" x="169" y="619" width="71" height="30"/>
+                                <rect key="frame" x="171" y="690" width="71" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Open Map"/>
                                 <connections>
@@ -46,6 +52,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="imageView" destination="vYa-Ag-uvo" id="e2Z-wj-IaB"/>
+                        <outlet property="textView" destination="B8c-VB-bxV" id="KgC-wq-p6K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
